@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <EditText
+            android:id="@+id/algorithmInputView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:hint="Алгоритм"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/stringInputView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:autofillHints=""
+            android:hint="Исходная строка"
+            app:layout_constraintEnd_toEndOf="@+id/algorithmInputView"
+            app:layout_constraintStart_toStartOf="@+id/algorithmInputView"
+            app:layout_constraintTop_toBottomOf="@+id/algorithmInputView" />
+
+        <Button
+            android:id="@+id/hashButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:text="Захешировать строку"
+            app:layout_constraintEnd_toEndOf="@+id/stringInputView"
+            app:layout_constraintStart_toStartOf="@+id/stringInputView"
+            app:layout_constraintTop_toBottomOf="@+id/stringInputView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>
