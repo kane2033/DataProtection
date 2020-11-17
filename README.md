@@ -12,3 +12,6 @@
 Системные требования: Android 8.0.
 
 [Скачать](https://github.com/kane2033/DataProtection/releases/download/v1.2/data-protection.apk)
+
+### Папка с отчетами:
+[Ссылка на папку](https://github.com/kane2033/DataProtection/tree/master/%D0%9E%D1%82%D1%87%D0%B5%D1%82%D1%8B)
