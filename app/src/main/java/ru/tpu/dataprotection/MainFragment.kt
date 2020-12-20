@@ -25,5 +25,9 @@ class MainFragment : Fragment() {
         gotoHashButton.setOnClickListener {
             findNavController().navigate(R.id.action_mainFragment_to_hashFragment)
         }
+
+        gotoSignatureButton.setOnClickListener {
+            findNavController().navigate(R.id.action_mainFragment_to_signatureFragment)
+        }
     }
 }

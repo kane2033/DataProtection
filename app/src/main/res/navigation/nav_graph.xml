@@ -9,13 +9,16 @@
         android:id="@+id/mainFragment"
         android:name="ru.tpu.dataprotection.MainFragment"
         android:label="main_fragment"
-        tools:layout="@layout/main_fragment" >
+        tools:layout="@layout/main_fragment">
         <action
             android:id="@+id/action_mainFragment_to_encoderFragment"
             app:destination="@id/encoderFragment" />
         <action
             android:id="@+id/action_mainFragment_to_hashFragment"
             app:destination="@id/hashFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_signatureFragment"
+            app:destination="@id/signatureFragment" />
     </fragment>
     <fragment
         android:id="@+id/encoderFragment"
@@ -27,4 +30,9 @@
         android:name="ru.tpu.dataprotection.hash.HashFragment"
         android:label="hash_fragment"
         tools:layout="@layout/hash_fragment" />
+    <fragment
+        android:id="@+id/signatureFragment"
+        android:name="ru.tpu.dataprotection.signature.SignatureFragment"
+        android:label="signature_fragment"
+        tools:layout="@layout/signature_fragment" />
 </navigation>

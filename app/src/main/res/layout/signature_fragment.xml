@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signature.SignatureFragment">
+
+    <EditText
+        android:id="@+id/stringInputView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:autofillHints=""
+        android:hint="Исходная строка"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/signButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:text="Подписать"
+        app:layout_constraintEnd_toEndOf="@+id/stringInputView"
+        app:layout_constraintStart_toStartOf="@+id/stringInputView"
+        app:layout_constraintTop_toBottomOf="@+id/stringInputView" />
+
+    <TextView
+        android:id="@+id/signResultView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Подпись"
+        android:layout_margin="24dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        style="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="@+id/signButton"
+        app:layout_constraintStart_toStartOf="@+id/signButton"
+        app:layout_constraintTop_toBottomOf="@+id/signButton" />
+
+    <Button
+        android:id="@+id/checkSignButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:text="Проверить подпись"
+        app:layout_constraintEnd_toEndOf="@+id/signResultView"
+        app:layout_constraintStart_toStartOf="@+id/signResultView"
+        app:layout_constraintTop_toBottomOf="@+id/signResultView" />
+
+    <TextView
+        android:id="@+id/checkResultView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Результат проверки подписи"
+        android:layout_margin="24dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        style="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="@+id/checkSignButton"
+        app:layout_constraintStart_toStartOf="@+id/checkSignButton"
+        app:layout_constraintTop_toBottomOf="@+id/checkSignButton" />
+
+    <Button
+        android:id="@+id/refreshKeysButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:text="Сбросить ключ"
+        app:layout_constraintEnd_toEndOf="@+id/checkResultView"
+        app:layout_constraintStart_toStartOf="@+id/checkResultView"
+        app:layout_constraintTop_toBottomOf="@+id/checkResultView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

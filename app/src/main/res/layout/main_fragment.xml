@@ -29,4 +29,14 @@
         app:layout_constraintStart_toStartOf="@+id/gotoEncodeButton"
         app:layout_constraintTop_toBottomOf="@+id/gotoEncodeButton" />
 
+    <Button
+        android:id="@+id/gotoSignatureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:text="Электронная подпись"
+        app:layout_constraintEnd_toEndOf="@+id/gotoHashButton"
+        app:layout_constraintStart_toStartOf="@+id/gotoHashButton"
+        app:layout_constraintTop_toBottomOf="@+id/gotoHashButton" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
