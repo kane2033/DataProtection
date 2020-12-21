@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_mainFragment_to_signatureFragment"
             app:destination="@id/signatureFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_authFragment"
+            app:destination="@id/authFragment" />
     </fragment>
     <fragment
         android:id="@+id/encoderFragment"
@@ -35,4 +38,9 @@
         android:name="ru.tpu.dataprotection.signature.SignatureFragment"
         android:label="signature_fragment"
         tools:layout="@layout/signature_fragment" />
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="ru.tpu.dataprotection.auth.AuthFragment"
+        android:label="auth_fragment"
+        tools:layout="@layout/auth_fragment" />
 </navigation>

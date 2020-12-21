@@ -39,4 +39,14 @@
         app:layout_constraintStart_toStartOf="@+id/gotoHashButton"
         app:layout_constraintTop_toBottomOf="@+id/gotoHashButton" />
 
+    <Button
+        android:id="@+id/gotoAuthButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:text="Авторизация"
+        app:layout_constraintEnd_toEndOf="@+id/gotoSignatureButton"
+        app:layout_constraintStart_toStartOf="@+id/gotoSignatureButton"
+        app:layout_constraintTop_toBottomOf="@+id/gotoSignatureButton" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
